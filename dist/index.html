@@ -1,22 +1,91 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 	<title>Made in A2</title>
 	<style type="text/css">
+		html,
 		body {
-			max-width: 600px;
-			padding: 4em;
-			margin: 0 auto;
+			margin: 0;
+			padding: 0;
 			font-family: sans-serif;
+		}
+		.wrapper {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 0 2em;
+		}
+
+		.header {
+			padding: 2em 0;
+			background: #444;
+			color: #fff;
+		}
+		.header a {
+			color: #fff;
+		}
+
+		.content {
+			padding: 2em 0;
+			color: #444;
+		}
+		.content a {
+			color: #444;
+		}
+		ul.companies li {
+			margin: 0 0 1em;
+		}
+
+		.footer {
+			padding: 2em 0;
+			background: #eee;
+			color: #888;
+			text-align: center;
+		}
+		.footer a {
+			color: #888;
 		}
 	</style>
 </head>
 <body>
-	<h1>Made in A2</h1>
-	<ul>
-		<li>
-			<a href="http://farmlogs.com/" target="_blank">FarmLogs</a>
-		</li>
-	</ul>
+
+	<div class="header">
+		<div class="wrapper">
+			<h1>Made in A2</h1>
+			<p>
+				Tech companies in Ann Arbor, MI.
+				<a href="mailto:design@farmlogs.com">Add your company</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="wrapper">
+			<ul class="companies">
+				<li>
+					<a href="http://duosecurity.com/" target="_blank">Duo Security</a>
+				</li>
+				<li>
+					<a href="http://farmlogs.com/" target="_blank">FarmLogs</a>
+				</li>
+				<li>
+					<a href="http://pinocc.io/" target="_blank">Pinoccio</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="wrapper">
+			<p>
+				made by
+				<a href="http://farmlogs.com/about/" target="_blank">Designers at FarmLogs</a>
+				-
+				(<a href="https://github.com/sampl/madeina2" target="_blank">source</a>)
+
+			</p>
+		</div>
+	</div>
+
 </body>
 </html>
