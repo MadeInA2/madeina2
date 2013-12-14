@@ -4,47 +4,102 @@
 <head>
 	<title>Made in A2</title>
 	<style type="text/css">
+
+		/* global */
+		* {
+			font-weight: 300;
+			font-family: sans-serif;
+			box-sizing: border-box;
+		}
 		html,
 		body {
 			margin: 0;
 			padding: 0;
-			font-family: sans-serif;
+			text-align: center;
 		}
 		.wrapper {
-			max-width: 800px;
+			max-width: 600px;
 			margin: 0 auto;
 			padding: 0 2em;
 		}
+		a {
+			color: inherit;
+		}
 
+		/* header */
 		.header {
-			padding: 2em 0;
-			background: #444;
-			color: #fff;
+			padding: 20% 0 3em;
+			background: hsl(220, 20%, 20%);
+			color: white;
 		}
-		.header a {
+		.header h1 {
+			font-size: 35px;
+		}
+		.header p {
 			color: #fff;
+			font-weight: 400;
 		}
 
-		.content {
-			padding: 2em 0;
+		/* generic company styles */
+		.company {
 			color: #444;
+			opacity: .95;
 		}
-		.content a {
-			color: #444;
+		.company:hover {
+			opacity: 1;
 		}
-		ul.companies li {
-			margin: 0 0 1em;
+		.company a {
+			display: block;
+			padding: 1.333em 0;
+			line-height: 1.33;
+			font-size: 55px;
+			text-decoration: none;
 		}
 
+		/* specific company styles */
+		.company.cribspot {
+			background: hsl(30, 90%, 70%);
+			color: white;
+		}
+		.company.duo {
+			background: hsl(0, 0%, 96%);
+			color: hsl(104, 44%, 49%);
+		}
+		.company.farmlogs {
+			background: hsl(135, 40%, 40%);
+			color: white;
+		}
+		.company.nutshell {
+			background: hsl(37, 5%, 35%);
+			color: white;
+		}
+		.company.olark {
+			background: hsl(14, 68%, 50%);
+			color: white;
+		}
+		.company.pinoccio {
+			background: white;
+			color: hsl(202, 48%, 62%);
+		}
+		.company.protean {
+			background: hsl(0, 0%, 20%);
+			color: white;
+		}
+		.company.seelio {
+			background: hsl(220, 50%, 80%);
+			color: white;
+		}
+
+		/* footer */
 		.footer {
 			padding: 2em 0;
 			background: #eee;
 			color: #888;
-			text-align: center;
 		}
 		.footer a {
 			color: #888;
 		}
+
 	</style>
 </head>
 <body>
@@ -54,40 +109,36 @@
 			<h1>Made in A2</h1>
 			<p>
 				Tech companies in Ann Arbor, Michigan.
+			</p>
+			<p>
 				<a href="mailto:design@farmlogs.com">Add your company</a>
 			</p>
 		</div>
 	</div>
 
-	<div class="content">
-		<div class="wrapper">
-			<ul class="companies">
-				<li>
-					<a href="http://duosecurity.com/" target="_blank">Duo Security</a>
-				</li>
-				<li>
-					<a href="http://farmlogs.com/" target="_blank">FarmLogs</a>
-				</li>
-				<li>
-					<a href="http://pinocc.io/" target="_blank">Pinoccio</a>
-				</li>
-				<li>
-					<a href="http://nutshell.com" target="_blank">Nutshell</a>
-				</li>
-				<li>
-					<a href="http://olark.com" target="_blank">Olark</a>
-				</li>
-				<li>
-					<a href="http://getprotean.com" target="_blank">Protean</a>
-				</li>
-				<li>
-					<a href="http://seelio.com" target="_blank">Seelio</a>
-				</li>
-				<li>
-					<a href="http://cribspot.com" target="_blank">Cribspot</a>
-				</li>
-			</ul>
-		</div>
+	<div class="company cribspot">
+		<a href="http://cribspot.com" target="_blank">Cribspot</a>
+	</div>
+	<div class="company duo">
+		<a href="http://duosecurity.com/" target="_blank">Duo Security</a>
+	</div>
+	<div class="company farmlogs">
+		<a href="http://farmlogs.com/" target="_blank">FarmLogs</a>
+	</div>
+	<div class="company nutshell">
+		<a href="http://nutshell.com" target="_blank">Nutshell</a>
+	</div>
+	<div class="company olark">
+		<a href="http://olark.com" target="_blank">Olark</a>
+	</div>
+	<div class="company pinoccio">
+		<a href="http://pinocc.io/" target="_blank">Pinoccio</a>
+	</div>
+	<div class="company protean">
+		<a href="http://getprotean.com" target="_blank">Protean</a>
+	</div>
+	<div class="company seelio">
+		<a href="http://seelio.com" target="_blank">Seelio</a>
 	</div>
 
 	<div class="footer">
