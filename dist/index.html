@@ -16,6 +16,7 @@
 			margin: 0;
 			padding: 0;
 			text-align: center;
+			font-size: 14px;
 		}
 		.wrapper {
 			max-width: 600px;
@@ -50,7 +51,7 @@
 		}
 		.company a {
 			display: block;
-			padding: 1.333em 0;
+			padding: 50px 0;
 			line-height: 1.33;
 			font-size: 55px;
 			text-decoration: none;
@@ -120,8 +121,28 @@
 			background: #eee;
 			color: #888;
 		}
+		.footer p {
+			margin: 0;
+		}
 		.footer a {
 			color: #888;
+		}
+
+		@media (min-width: 1000px) {
+			.company {
+				width: 33.33%;
+				float: left;
+			}
+			.company a {
+				line-height: 75px;
+				padding: 75px 0;
+			}
+			.footer {
+				width: 33.33%;
+				float: left;
+				line-height: 75px;
+				padding: 75px 0;
+			}
 		}
 
 	</style>
@@ -188,7 +209,6 @@
 			<p>
 				made by
 				<a href="http://farmlogs.com/about/" target="_blank">Designers at FarmLogs</a>
-				-
 				(<a href="https://github.com/sampl/madeina2" target="_blank">source</a>)
 
 			</p>
