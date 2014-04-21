@@ -163,7 +163,7 @@
 			background: #eee;
 			color: #888;
 			float: left;
-			width: 66.666%;
+			width: 100%;
 		}
 		.footer p {
 			margin: 0;
@@ -172,6 +172,7 @@
 			color: #888;
 		}
 
+		/* wider screen version */
 		@media (min-width: 1000px) {
 			.company {
 				width: 33.33%;
@@ -182,14 +183,17 @@
 				padding: 75px 0;
 			}
 			.footer {
-				/*
-				temporarily removing since the num of companys is divisible by 3 atm
-				TODO: a better way to do this
-				width: 33.33%;
-				float: left;
-				*/
 				line-height: 75px;
 				padding: 75px 0;
+			}
+			.footer:nth-child(3n + 0) {
+				width: 66.666%;
+			}
+			.footer:nth-child(3n + 1) {
+				width: 33.333%;
+			}
+			.footer:nth-child(3n + 2) {
+				width: 100%;
 			}
 		}
 
