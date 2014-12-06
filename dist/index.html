@@ -3,12 +3,13 @@
 <html>
 <head>
 	<title>Made in A2</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
 	<style type="text/css">
 
 		/* global */
 		* {
 			font-weight: 300;
-			font-family: sans-serif;
+			font-family: 'Roboto Slab', sans-serif;
 			box-sizing: border-box;
 		}
 		html,
@@ -16,12 +17,6 @@
 			margin: 0;
 			padding: 0;
 			text-align: center;
-			font-size: 14px;
-		}
-		.wrapper {
-			max-width: 600px;
-			margin: 0 auto;
-			padding: 0 2em;
 		}
 		a {
 			color: inherit;
@@ -30,7 +25,7 @@
 		/* header */
 		.header {
 			padding: 3em 2em 2.3em 2em;
-			background: hsl(220, 20%, 20%);
+			background: hsl(220, 20%, 15%);
 			color: white;
 		}
 		.header h1 {
@@ -52,19 +47,28 @@
 		}
 
 		/* generic company styles */
+		.wrapper {
+			border: 6px solid white;
+		}
 		.company {
 			color: #444;
 			opacity: .95;
+			border: 6px solid white;
+			display: block;
+			float: left;
+			width: 100%;
 		}
 		.company:hover {
 			opacity: 1;
 		}
 		.company a {
 			display: block;
-			padding: 50px 0;
+			padding: 2em 0;
 			line-height: 1.33;
-			font-size: 46px;
+			font-size: 36px;
 			text-decoration: none;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 
 		/* specific company styles */
@@ -179,11 +183,11 @@
 
 		/* footer */
 		.footer {
-			padding: 2em 0;
-			background: #eee;
+			padding: 8em 0;
 			color: #888;
 			float: left;
 			width: 100%;
+			font-size: 14px;
 		}
 		.footer p {
 			margin: 0;
@@ -192,34 +196,20 @@
 			color: #888;
 		}
 
-		/* wider screen version */
+		/* wider screen versions */
+		@media (min-width: 700px) {
+			.company {
+				width: 50%;
+			}
+		}
 		@media (min-width: 1000px) {
 			.company {
 				width: 33.33%;
-				float: left;
-			}
-			.company a {
-				line-height: 75px;
-				padding: 75px 0;
-			}
-			.footer {
-				line-height: 75px;
-				padding: 75px 0;
-			}
-			.footer:nth-child(3n + 0) {
-				width: 66.666%;
-			}
-			.footer:nth-child(3n + 1) {
-				width: 33.333%;
-			}
-			.footer:nth-child(3n + 2) {
-				width: 100%;
 			}
 		}
-
-		@media (max-width: 500px) {
-			.header #logo {
-				padding: 2em;
+		@media (min-width: 1400px) {
+			.company {
+				width: 25%;
 			}
 		}
 
@@ -240,12 +230,9 @@
 <body>
 
 	<div class="header">
-		<div class="wrapper">
 			<h1>Made in A2</h1>
 			<a href="/"><img id="logo" src="a2-whiteboard.png" alt="Made in A2" /></a>
-			<p>
-				Tech companies in Ann Arbor, Michigan.
-			</p>
+			<p>Tech companies in Ann Arbor, Michigan.</p>
 			<p>
 				<a href="https://github.com/sampl/madeina2" target="_blank">Add your company</a>
 				&middot;
@@ -255,8 +242,9 @@
 				<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5330d1e37c4761d2"></script>
 			</p>
-		</div>
 	</div>
+
+	<div class="wrapper"> <!-- start wrapper -->
 
 	<div class="company accio-energy">
 		<a href="http://www.accioenergy.com/" target="_blank">Accio Energy</a>
@@ -340,15 +328,15 @@
 		<a href="http://wise.ly" target="_blank">Wisely</a>
 	</div>
 
+	</div> <!-- end wrapper -->
+
 	<div class="footer">
-		<div class="wrapper">
 			<p>
 				made by
 				<a href="http://farmlogs.com/about/" target="_blank">Designers at FarmLogs</a>
 				(<a href="https://github.com/sampl/madeina2" target="_blank">source</a>)
 
 			</p>
-		</div>
 	</div>
 
 </body>
