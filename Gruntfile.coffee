@@ -19,6 +19,11 @@ module.exports = (grunt) ->
 				cwd: 'source/styles'
 				src: ['**']
 				dest: 'build/'
+			js:
+				expand: true
+				cwd: 'source/scripts'
+				src: ['**']
+				dest: 'build/'
 
 		# compile our html
 		jade:
