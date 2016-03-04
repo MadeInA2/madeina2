@@ -1,5 +1,6 @@
 /* global */
 * {
+	color: hsl(200, 20%, 30%);
 	font-weight: 300;
 	font-family: 'Roboto Slab', sans-serif;
 	box-sizing: border-box;
@@ -10,7 +11,10 @@ body {
 	padding: 0;
 }
 a {
-	color: inherit;
+	color: hsl(200, 80%, 60%);
+}
+a:visited {
+	color: hsl(200, 80%, 80%);
 }
 
 /* header */
@@ -38,7 +42,7 @@ a {
 	margin-bottom: 1.2em;
 }
 
-/* generic company styles */
+/* companies */
 .wrapper {
 	border: 6px solid white;
 	overflow: auto;
@@ -65,9 +69,33 @@ a {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	color: white;
 }
 .company.add-your-own a {
 	font-size: 18px;
+	color: #444;
+}
+
+/* groups */
+.group-wrapper {
+	margin: 0 auto;
+	max-width: 700px;
+	padding: 0 2rem;
+}
+.group {
+	border-bottom: 1px solid #eee;
+	padding: 2rem 0;
+}
+.group h2 {
+	margin: 0 0 1rem;
+}
+.group p {
+	font-family: 'Roboto';
+	line-height: 1.5;
+}
+.group .links a {
+	display: inline-block;
+	margin: 0 1rem 0 0;
 }
 
 /* footer */
