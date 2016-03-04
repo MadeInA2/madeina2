@@ -16,12 +16,12 @@ module.exports = (grunt) ->
 				dest: 'build/images/'
 			css:
 				expand: true
-				cwd: 'source/styles'
+				cwd: 'source/styles/'
 				src: ['**']
 				dest: 'build/'
 			js:
 				expand: true
-				cwd: 'source/scripts'
+				cwd: 'source/scripts/'
 				src: ['**']
 				dest: 'build/'
 
@@ -59,6 +59,7 @@ module.exports = (grunt) ->
 			deploy:
 				upload: [
 					src: 'build/**/*.*'
+					rel: 'build/'
 					dest: '/'
 				]
 
