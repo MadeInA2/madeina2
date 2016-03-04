@@ -22,3 +22,8 @@ Getting started:
 Run `grunt` to build the site and start a webserver at [localhost:8000](http://localhost:8000/). Install LiveReload to automatically refresh the page when you've made changes.
 
 To deploy, get an `aws.json` file from Sam, add to the project root, and run `grunt deploy`.
+
+
+### Other
+
+Background image thanks to [dgermony](https://flic.kr/p/eHtTm)

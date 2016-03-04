@@ -20,7 +20,9 @@ a:visited {
 /* header */
 .header {
 	overflow: auto;
-	background: hsl(220, 20%, 15%);
+	background-color: #00307F;
+	background: url('images/bg.jpg') no-repeat center center;
+	background-size: cover;
 	color: white;
 	text-align: center;
 }
@@ -61,10 +63,6 @@ a:visited {
 	font-weight: 500;
 	letter-spacing: .05em;
 	color: white;
-	opacity: .9;
-}
-.tabs .tab:hover {
-	opacity: 1;
 }
 .tabs .tab.active {
 	border-bottom: 2px solid white;
