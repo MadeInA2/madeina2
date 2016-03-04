@@ -1,0 +1,14 @@
+.tabs
+	a(href="index.html")#companies-tab.tab Companies
+	a(href="groups.html")#groups-tab.tab Groups
+
+script.
+	var page = window.location.pathname.split('/')[1]
+	switch (page) {
+		case 'index.html':
+			document.getElementById("companies-tab").className = "tab active";
+			break;
+		case 'groups.html':
+			document.getElementById("groups-tab").className = "tab active";
+			break;
+	}

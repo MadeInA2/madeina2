@@ -19,7 +19,7 @@ a:visited {
 
 /* header */
 .header {
-	padding: 3em 2em 2.3em 2em;
+	overflow: auto;
 	background: hsl(220, 20%, 15%);
 	color: white;
 	text-align: center;
@@ -31,15 +31,43 @@ a:visited {
 	margin: 0;
 	height: 1px;
 }
-.header p {
+.header .subheading {
 	color: #fff;
 	font-weight: 400;
+	margin: 0 0 8rem;
 }
 
 .header #logo {
 	max-width: 250px;
 	width: 100%;
-	margin-bottom: 1.2em;
+	margin: 3rem 0 0;
+}
+
+/* tabs */
+.tabs {
+	overflow: auto;
+	margin: 0;
+	text-align: right;
+	padding: 2rem;
+}
+.tabs .tab {
+	border-bottom: 2px solid transparent;
+	display: inline-block;
+	padding: .5rem 0;
+	margin: 0 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: roboto;
+	font-weight: 500;
+	letter-spacing: .05em;
+	color: white;
+	opacity: .9;
+}
+.tabs .tab:hover {
+	opacity: 1;
+}
+.tabs .tab.active {
+	border-bottom: 2px solid white;
 }
 
 /* companies */
