@@ -1,0 +1,100 @@
+/* global */
+* {
+	font-weight: 300;
+	font-family: 'Roboto Slab', sans-serif;
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: inherit;
+}
+
+/* header */
+.header {
+	padding: 3em 2em 2.3em 2em;
+	background: hsl(220, 20%, 15%);
+	color: white;
+	text-align: center;
+}
+.header h1 {
+	font-size: 35px;
+	text-indent: -9999px;
+	padding: 0;
+	margin: 0;
+	height: 1px;
+}
+.header p {
+	color: #fff;
+	font-weight: 400;
+}
+
+.header #logo {
+	max-width: 250px;
+	width: 100%;
+	margin-bottom: 1.2em;
+}
+
+/* generic company styles */
+.wrapper {
+	border: 6px solid white;
+}
+.company {
+	color: #444;
+	opacity: .95;
+	border: 6px solid white;
+	display: block;
+	float: left;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+.company:hover {
+	opacity: 1;
+}
+.company a {
+	display: block;
+	padding: 2em 0;
+	line-height: 1.33;
+	font-size: 36px;
+	text-decoration: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* footer */
+.footer {
+	padding: 8em 0;
+	color: #888;
+	float: left;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+}
+.footer p {
+	margin: 0;
+}
+.footer a {
+	color: #888;
+}
+
+/* wider screen versions */
+@media (min-width: 700px) {
+	.company {
+		width: 50%;
+	}
+}
+@media (min-width: 1000px) {
+	.company {
+		width: 33.33%;
+	}
+}
+@media (min-width: 1400px) {
+	.company {
+		width: 25%;
+	}
+}
