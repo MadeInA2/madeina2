@@ -5,6 +5,7 @@
 script.
 	var page = window.location.pathname.split('/')[1]
 	switch (page) {
+		case '':
 		case 'index.html':
 			document.getElementById("companies-tab").className = "tab active";
 			break;
