@@ -8,7 +8,6 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	text-align: center;
 }
 a {
 	color: inherit;
@@ -19,6 +18,7 @@ a {
 	padding: 3em 2em 2.3em 2em;
 	background: hsl(220, 20%, 15%);
 	color: white;
+	text-align: center;
 }
 .header h1 {
 	font-size: 35px;
@@ -50,6 +50,7 @@ a {
 	float: left;
 	width: 100%;
 	color: white;
+	text-align: center;
 }
 .company:hover {
 	opacity: 1;
@@ -72,6 +73,7 @@ a {
 	float: left;
 	width: 100%;
 	font-size: 14px;
+	text-align: center;
 }
 .footer p {
 	margin: 0;
