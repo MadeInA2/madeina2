@@ -41,6 +41,7 @@ a {
 /* generic company styles */
 .wrapper {
 	border: 6px solid white;
+	overflow: auto;
 }
 .company {
 	color: #444;
@@ -57,26 +58,26 @@ a {
 }
 .company a {
 	display: block;
-	padding: 2em 0;
-	line-height: 1.33;
+	padding: 5rem 0;
+	line-height: 3rem;
 	font-size: 36px;
 	text-decoration: none;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+.company.add-your-own a {
+	font-size: 18px;
+}
 
 /* footer */
 .footer {
-	padding: 8em 0;
+	padding: 5em 0;
 	color: #888;
 	float: left;
 	width: 100%;
 	font-size: 14px;
 	text-align: center;
-}
-.footer p {
-	margin: 0;
 }
 .footer a {
 	color: #888;
