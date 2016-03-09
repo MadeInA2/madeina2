@@ -17,8 +17,8 @@ a:visited {
 	color: hsl(200, 80%, 80%);
 }
 
-/* header */
-.header {
+/* headers */
+.hero {
 	overflow: auto;
 	background-color: #00307F;
 	background: url('images/bg.jpg') no-repeat center center;
@@ -26,34 +26,61 @@ a:visited {
 	color: white;
 	text-align: center;
 }
-.header h1 {
+.hero h1 {
 	font-size: 35px;
 	text-indent: -9999px;
 	padding: 0;
 	margin: 0;
 	height: 1px;
 }
-.header .subheading {
+.hero .subheading {
 	color: #fff;
 	font-weight: 400;
 	margin: 0 0 1rem;
 }
 
-.header #logo {
+.hero .logo {
 	max-width: 250px;
 	width: 100%;
 	margin: 3rem 0 0;
 }
-.header .social-media-icons {
+.hero .social-media-icons {
 	margin: 0 0 8rem;
 }
-.header .social-media-icons svg {
+.hero .social-media-icons svg {
 	width: 50px;
 	height: 50px;
 	margin: .5rem;
 }
-.header .social-media-icons svg path {
+.hero .social-media-icons svg path {
 	fill: white;
+}
+
+.top-bar {
+	background-color: #00307F;
+	background: url('images/bg.jpg') no-repeat top center;
+	background-size: cover;
+	color: white;
+	height: 110px;
+}
+
+.top-bar h1 {
+	text-indent: -9999px;
+	padding: 0;
+	margin: 0;
+	height: 1px;
+}
+
+.top-bar .go-home {
+	position: relative;
+	top: -100px;
+	margin-left: 3rem;
+}
+
+.top-bar .logo {
+	max-width: 100px;
+	width: 100%;
+	margin: 0;
 }
 
 /* tabs */
@@ -149,10 +176,35 @@ a:visited {
 }
 
 /* wider screen versions */
+
+@media (max-width: 600px) {
+	.top-bar {
+		height: auto;
+	}
+
+	.top-bar .go-home {
+		position: relative;
+		top: 0;
+		width: 100px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.top-bar .logo {
+		width: 100px;
+		margin: 0 0 2rem 0;
+	}
+
+	.tabs {
+		text-align: center;
+	}
+}
+
 @media (min-width: 700px) {
 	.company {
 		width: 50%;
 	}
+
 }
 @media (min-width: 1000px) {
 	.company {
