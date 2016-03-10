@@ -24,6 +24,11 @@ Run `grunt` to build the site and start a webserver at [localhost:8000](http://l
 To deploy, get an `aws.json` file from Sam, add to the project root, and run `grunt deploy`.
 
 
+### Slack team invitations
+
+To grab an invitation to [the Slack team](https://madeina2.slack.com), go to https://madeina2slackin.herokuapp.com/. This is managed via our [rauchg/slackin](https://github.com/rauchg/slackin) instance, hosted on [Heroku](https://heroku.com/). To deploy the app, simply run `script/deploy-slackin` (you'll need to be a registered collaborator on the Heroku app).
+
+
 ### Other
 
 Background image thanks to [dgermony](https://flic.kr/p/eHtTm)
