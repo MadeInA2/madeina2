@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Usage: script/deploy-slackin
+# Deploys our slackin app to Heroku
+
+SCRIPT_DIR=$(dirname "$0")
+cd "$SCRIPT_DIR/.."
+
+set -o errexit
+
+echo "**** Deploying slackin to Heroku"
+
+if ! git remote | grep heroku > /dev/null; then
+  git remote add heroku git@heroku.com:madeina2slackin.git
+fi
+
+# Using git-subtree since we only want to deploy the slackin/ subdirectory to
+# our Heroku app. See http://stackoverflow.com/a/10648623
+git subtree push --prefix slackin heroku master
