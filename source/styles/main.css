@@ -150,8 +150,12 @@ a:visited {
 	border-bottom: 1px solid #eee;
 	padding: 2rem 0;
 }
+.group .pic {
+	max-width: 100%;
+}
+
 .group h2 {
-	margin: 0 0 1rem;
+	margin: 1rem 0 1rem;
 }
 .group p {
 	font-family: 'Roboto';
