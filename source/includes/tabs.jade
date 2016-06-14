@@ -1,6 +1,7 @@
 .tabs
 	a(href="index.html")#companies-tab.tab Companies
 	a(href="groups.html")#groups-tab.tab Groups
+	a(href="jobs.html")#jobs-tab.tab Jobs
 
 script.
 	var page = window.location.pathname.split('/')[1]
@@ -11,5 +12,8 @@ script.
 			break;
 		case 'groups.html':
 			document.getElementById("groups-tab").className = "tab active";
+			break;
+		case 'jobs.html':
+			document.getElementById("jobs-tab").className = "tab active";
 			break;
 	}

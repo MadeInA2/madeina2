@@ -17,6 +17,13 @@ a:visited {
 	color: hsl(200, 80%, 80%);
 }
 
+hr {
+	height: 1px;
+	border: none;
+	background: #eee;
+	margin: 1em 0;
+}
+
 /* headers */
 .hero {
 	overflow: auto;
@@ -164,6 +171,13 @@ a:visited {
 .group .links a {
 	display: inline-block;
 	margin: 0 1rem 0 0;
+}
+
+/* jobs */
+.jobs-wrapper {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 2rem;
 }
 
 /* footer */

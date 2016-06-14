@@ -1,0 +1,42 @@
+extends ../layouts/main
+
+block title
+	title Made in A2 - Groups
+
+block header
+	.top-bar
+		include ../includes/tabs
+		h1 Made in A2
+		a.go-home(href="/")
+			img.logo(src="images/a2-whiteboard.png", alt="Made in A2")
+
+block content
+
+	.jobs-wrapper
+
+		// TEST JOBS, DELETE THESE
+		p Job
+		p Job
+		p Job
+		p Job
+		p Job
+		p Job
+		p Job
+		p Job
+		p Job
+		p Job
+		p Job
+
+		// threw in a <div id="truejob"> in case the js needs a DOM element to latch on to
+		// feel free to delete
+		#truejob
+
+		hr
+
+		p 
+			a(href="https://www.truejob.com/users/sign_up" target="_blank") Add a Job
+			span(style="float: right;") powered by  
+				a(href="https://www.truejob.com/" target="_blank") TrueJob
+
+		// should be able to put js here, aka:
+		script(src="http://example.com/myscript.js")
