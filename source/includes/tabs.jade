@@ -1,15 +1,15 @@
 .tabs
-	a(href="index.html")#companies-tab.tab Companies
-	a(href="groups.html")#groups-tab.tab Groups
+	a(href="/")#companies-tab.tab Companies
+	a(href="/groups")#groups-tab.tab Groups
 
 script.
 	var page = window.location.pathname.split('/')[1]
 	switch (page) {
 		case '':
-		case 'index.html':
+		case '/':
 			document.getElementById("companies-tab").className = "tab active";
 			break;
-		case 'groups.html':
+		case '/groups':
 			document.getElementById("groups-tab").className = "tab active";
 			break;
 	}
