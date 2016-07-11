@@ -3,13 +3,12 @@
 	a(href="/groups")#groups-tab.tab Groups
 
 script.
-	var page = window.location.pathname.split('/')[1]
-	switch (page) {
+
+	switch ( window.location.pathname.split('/')[1] ) {
 		case '':
-		case '/':
 			document.getElementById("companies-tab").className = "tab active";
 			break;
-		case '/groups':
+		case 'groups':
 			document.getElementById("groups-tab").className = "tab active";
 			break;
 	}

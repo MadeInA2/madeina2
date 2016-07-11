@@ -9,6 +9,18 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	line-height: 1.5;
+}
+
+/* basic elements */
+h1 {
+
+}
+h2 {
+	margin: 3rem 0 1rem;
+}
+h3 {
+
 }
 a {
 	color: hsl(200, 80%, 60%);
@@ -16,8 +28,12 @@ a {
 a:visited {
 	color: hsl(200, 80%, 80%);
 }
+p {
+	font-family: 'Roboto';
+	margin: 0 0 1rem;
+}
 
-/* headers */
+/* big homepage hero */
 .hero {
 	overflow: auto;
 	background-color: #00307F;
@@ -56,6 +72,7 @@ a:visited {
 	fill: white;
 }
 
+/* top bar */
 .top-bar {
 	background-color: #00307F;
 	background: url('images/bg.jpg') no-repeat top center;
@@ -143,28 +160,73 @@ a:visited {
 /* groups */
 .group-wrapper {
 	margin: 0 auto;
-	max-width: 700px;
+	max-width: 900px;
 	padding: 0 2rem;
+	overflow: auto;
 }
-.group {
-	border-bottom: 1px solid #eee;
-	padding: 2rem 0;
+
+/* group sidebar */
+.groups-nav {
+	width: 30%;
+	float: left;
+	padding: 3rem 0 0;
 }
-.group .pic {
+.groups-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.groups-nav ul li {
+	margin: 0 0 .5rem;
+}
+.groups-nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: roboto;
+	font-weight: 500;
+	letter-spacing: .05em;
+	font-size: 14px;
+}
+
+/* group list */
+.groups-content {
+	width: 70%;
+	float: right;
+}
+.groups-content ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.groups-content ul li {
+	margin: 0 0 1rem;
+}
+.groups-content ul li.featured {
+	background: #eee;
+	padding: 1rem;
+}
+.groups-content ul li a {
+	font-size: 16px;
+	margin: 0 0 1rem;
+}
+.groups-content ul li .pic {
 	max-width: 100%;
 }
 
-.group h2 {
-	margin: 1rem 0 1rem;
+/* make any sidebar sticky */
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
-.group p {
-	font-family: 'Roboto';
-	line-height: 1.5;
+
+/* sticky clearfix */
+.sticky:before,
+.sticky:after {
+	content: '';
+	display: table;
 }
-.group .links a {
-	display: inline-block;
-	margin: 0 1rem 0 0;
-}
+
 
 /* footer */
 .footer {
