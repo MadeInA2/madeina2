@@ -1,6 +1,6 @@
 .tabs
 	a(href="/")#companies-tab.tab Companies
-	a(href="/groups")#groups-tab.tab Groups
+	a(href="/community")#community-tab.tab Community
 
 script.
 
@@ -8,7 +8,7 @@ script.
 		case '':
 			document.getElementById("companies-tab").className = "tab active";
 			break;
-		case 'groups':
-			document.getElementById("groups-tab").className = "tab active";
+		case 'community':
+			document.getElementById("community-tab").className = "tab active";
 			break;
 	}
