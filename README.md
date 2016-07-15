@@ -21,7 +21,7 @@ Getting started:
 
 Run `grunt` to build the site and start a webserver at [localhost:8000](http://localhost:8000/). Install LiveReload to automatically refresh the page when you've made changes.
 
-To deploy, get an `aws.json` file from Sam, add to the project root, and run `grunt deploy`.
+To deploy, first ensure that you're a collaborator on the github repo, then run `grunt deploy`.
 
 
 ### Slack team invitations

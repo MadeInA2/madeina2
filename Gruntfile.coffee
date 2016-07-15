@@ -49,26 +49,19 @@ module.exports = (grunt) ->
 			files: ['source/**/*']
 			tasks: ['clean', 'copy', 'jade']
 
-		# deploy to s3
-		s3:
+		# deploy to github pages
+		'gh-pages':
 			options:
-				key: '<%= aws.key %>'
-				secret: '<%= aws.secret %>'
-				bucket: '<%= aws.bucket %>'
-				access: 'public-read'
-			deploy:
-				upload: [
-					src: 'build/**/*.*'
-					rel: 'build/'
-					dest: '/'
-				]
+				base: 'build'
+			src: ['**']
+
 
 	grunt.loadNpmTasks('grunt-contrib-clean')
 	grunt.loadNpmTasks('grunt-contrib-copy')
 	grunt.loadNpmTasks('grunt-contrib-jade')
 	grunt.loadNpmTasks('grunt-contrib-connect')
 	grunt.loadNpmTasks('grunt-contrib-watch')
-	grunt.loadNpmTasks('grunt-s3')	
+	grunt.loadNpmTasks('grunt-gh-pages')
 
 	# compiles the site and sets up a local server
 	# run this task with "grunt"
@@ -76,5 +69,5 @@ module.exports = (grunt) ->
 
 	# compiles the site and sends it to Amazon S3 (see readme for directions)
 	# run this task with "grunt deploy"
-	grunt.registerTask('deploy', ['clean', 'copy', 'jade', 's3'])
+	grunt.registerTask('deploy', ['clean', 'copy', 'jade', 'gh-pages'])
 	
