@@ -1,15 +1,14 @@
 .tabs
 	a(href="/")#companies-tab.tab Companies
-	a(href="/groups")#groups-tab.tab Groups
+	a(href="/community")#community-tab.tab Community
 
 script.
-	var page = window.location.pathname.split('/')[1]
-	switch (page) {
+
+	switch ( window.location.pathname.split('/')[1] ) {
 		case '':
-		case '/':
 			document.getElementById("companies-tab").className = "tab active";
 			break;
-		case '/groups':
-			document.getElementById("groups-tab").className = "tab active";
+		case 'community':
+			document.getElementById("community-tab").className = "tab active";
 			break;
 	}

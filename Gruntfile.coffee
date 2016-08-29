@@ -2,8 +2,6 @@ module.exports = (grunt) ->
 
 	grunt.initConfig
 
-		aws: grunt.file.readJSON('aws.json')
-		
 		# first, clean out everything in the /build folder
 		clean: ["build"]
 
@@ -55,8 +53,7 @@ module.exports = (grunt) ->
 				base: 'build'
 			src: ['**']
 
-
-	grunt.loadNpmTasks('grunt-contrib-clean')
+  grunt.loadNpmTasks('grunt-contrib-clean')
 	grunt.loadNpmTasks('grunt-contrib-copy')
 	grunt.loadNpmTasks('grunt-contrib-jade')
 	grunt.loadNpmTasks('grunt-contrib-connect')
@@ -70,4 +67,3 @@ module.exports = (grunt) ->
 	# compiles the site and sends it to Amazon S3 (see readme for directions)
 	# run this task with "grunt deploy"
 	grunt.registerTask('deploy', ['clean', 'copy', 'jade', 'gh-pages'])
-	

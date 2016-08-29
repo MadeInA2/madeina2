@@ -1,0 +1,484 @@
+extends ../../layouts/main
+
+block title
+	title Made in A2 - Community
+
+block header
+	.top-bar
+		include ../../includes/tabs
+		h1 Made in A2
+		a.go-home(href="/")
+			img.logo(src="/images/a2-whiteboard.png", alt="Made in A2")
+
+block content
+
+	.community-wrapper
+
+		.community-nav.sticky
+			ul
+				li.tag-h2.active
+					a(href="#coder-groups") Coder Groups
+				li.tag-h2
+					a(href="#maker-groups") Maker Groups
+				li.tag-h2
+					a(href="#technology-groups") Technology Groups
+				li.tag-h2
+					a(href="#un-conferences") Un/conferences
+				li.tag-h2
+					a(href="#hackathons") Hackathons
+				li.tag-h2
+					a(href="#infrastructure") Infrastructure
+				li.tag-h2
+					a(href="#job-hunting") Job Hunting
+				li.tag-h2
+					a(href="#kids-hack-ann-arbor") Kids Hack Ann Arbor
+
+		.community-content
+
+			h2#coder-groups Coder Groups
+			ul
+				li
+					a(href="http://www.meetup.com/Craftsman-Guild/") Craftsman Guild
+					p A group of programmers who meet up to talk about anything related to programming, with an emphasis on TDD and clean code.
+				li
+					img.pic(src="/images/groups/coffeehousecoders.jpeg")
+					a(href="http://annarbor.coffeehousecoders.com/") Coffee House Coders
+					p If you’re a pro at coding or you’re just getting started, CoffeeHouseCoders is a great way to hang out with people sharpening their programming skills. The hosts are super-friendly and if you’re stuck on a coding problem you’re bound to find someone who can help you out.
+					p CHC is a language-agnostic coding group. They meet every other week in Espresso Royale on State St.
+				li
+					a(href="http://www.meetup.com/gdg-a3/") Google Developer Group Ann Arbor Android
+					p The "GDG-A3" is an Ann Arbor based Android development group.
+				li
+					a(href="http://www.meetup.com/SEM-JS/") SE Michigan JavaScript
+					p "Sem.js" is a javascript group with a focus on emerging technologies like Node, Angular, etc.
+				li
+					a(href="http://michipug.wordpress.com/") Michigan Python Users Group
+					p Group for sharing local Python-related information.
+				li
+					a(href="http://www.meetup.com/ann-arbor-php/") Ann Arbor PHP MySQL
+					p Group for learning/discussing programming in the LAMP stack.
+				li
+					a(href="http://wordpressannarbor.com/") Wordpress Ann Arbor
+					p Networking/education group for WordPress.
+				li
+					a(href="http://www.meetup.com/midrupal/") Michigan Drupal Web Designers &amp; Developers
+					p Drupal skill-sharing group.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-Hadoop-User-Group-A2HUG/") Ann Arbor Hadoop User Group
+					p Dedicated to the advancement and education of people interested in working in the Hadoop cloud environment.
+				li
+					a(href="http://www.semislug.mi.org/") South-East Michigan Sun Local User Group
+					p Informal organization of Unix system and internetwork administrator.
+				li
+					a(href="http://www.washlug.org/") Washtenaw Linux Users Group
+					p Gathering place for persons interested in Linux.
+				li
+					a(href="http://codecraftsmansaturdays.blogspot.com/") Code Craftsman Saturdays
+					p Day-long, intensive practice event, focusing on the fundamentals of software development and design.
+				li
+					a(href="http://a2rb.org/") Ann Arbor Ruby Brigade
+					p A group that talks about Ruby, Rails, and other webby stuff.
+				li
+					a(href="http://aadnd.org/") Ann Arbor .NET Developer's Group
+					p Group that focuses primarily on .NET/C#, but also covers related topics.
+				li
+					a(href="http://www.meetup.com/A2-CocoaHeads/") Ann Arbor CocoaHeads
+					p Mac/iPhone Cocoa group.
+				li
+					a(href="http://www.meetup.com/Girl-Develop-It-Ann-Arbor/") Girl Develop It Ann Arbor
+					p Group with the goal to empower and assist women interested in getting into and advancing in the tech industry.
+				li
+					a(href="http://www.meetup.com/Meteor-Ann-Arbor/") Meteor Ann Arbor
+					p Meteor developer's group.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-Scala-Enthusiasts-User-Group-Meeting/") Ann Arbor Scala Enthusiasts User Group Meeting
+					p Group for learning scala.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-R-User-Group/") Ann Arbor R User Group
+					p Open to all levels of R programmers to share tips, training, insights, and applications.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-Gophers/") Ann Arbor Gophers
+					p Group for Go programmers in Ann Arbor.
+				li
+					a(href="https://groups.drupal.org/ann-arbor") Ann Arbor Drupal User Group
+					p Open group of Drupal users in Ann Arbor.
+				li
+					a(href="http://www.meetup.com/a2magento/") Ann Arbor Magento Developers Meetup
+					p Hub for Magento users and web developers interested in eCommerce to network and collaborate.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-C-Meetup/") Ann Arbor C++ Meetup
+					p A group for anyone interested in C++ development.
+				li
+					a(href="http://annarbor.pm.org/") Ann Arbor Perl Mongers
+					p Informal perl interest group.
+				li
+					a(href="http://michigandevs.com/") Michigan Devs
+					p Society of software developers from across Michigan who have come together to share their expertise and knowledge.
+				li
+					a(href="http://www.meetup.com/Ember-A2D/") Ember.js A2D
+					p Group for anyone interested in developing web or mobile applications that leverage Ember.js.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-PyLadies/") Ann Arbor PyLadies
+					p International mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community.
+				li
+					a(href="http://www.meetup.com/Free-Code-Camp-Ann-Arbor/") Free Code Camp Ann Arbor
+					p Group for anyone learning (or interested in learning) web development and coding through the free JavaScript based curriculum at freecodecamp.com.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-Mobile-Development-Meetup/") Mobile App, Game, and Internet of Things Group of Ann Arbor
+					p Group for mobile app, game, and internet of things developers working on their own projects.
+
+			h2#maker-groups Maker Groups
+			ul
+				li
+					img.pic(src="/images/groups/maker_works.jpg")
+					a(href="http://maker-works.com/") Maker Works
+					p Member-based workshop (requires a fee) for small businesses, entrepreneurs, tradespeople, skilled workers, artists, makers, and hobbyists.
+					p Maker Works has a cornucopia of tools available to members for working with wood, crafts, metal, and circuits. The staff and members are very friendly! They teach tool safety and basic usage classes for the public. Tours are free, and you have to see their 10,000+ sq ft space to believe it.
+
+				li
+					a(href="https://groups.yahoo.com/neo/groups/notbago/info") GO Tech
+					p Group for people who are interested in and make things using technology, whether that's a metal-cutting lathe or a Python script.
+
+				li.featured
+					img.pic(src="/images/groups/all_hands_active.jpeg")
+					a(href="http://www.allhandsactive.org/") All Hands Active
+					p "AHA!" is a membership-based (requires a fee) maker space with open access (public) hours Thursday - Sunday, 2pm to 10pm.
+					p Makers gather here at the AHA! Shop. We take our world and play with it like legos. Mixing and matching recipes of life like a top chef with a picky client. A dash of electronics, a pinch of art, a scoop of biology and a MONSTER amount of awesome! All Hands Active is a 501(c)(3) non-profit community organization. We want to make Ann Arbor smarter, and this is good for everyone!
+					a(href="http://www.meetup.com/AllHandsActive/", target="_blank") meetup
+
+				li
+					a(href="http://a2makerfaire.wordpress.com/") Ann Arbor Mini Maker Faire
+					p A community-scale version of the big Maker Faires in Detroit, San Francisco, and New York City. Free to attend, free to exhibit.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-Raspberry-Pi-Projects/") Ann Arbor Raspberry Pi
+					p Group for Raspberry Pi owners/developers in the Ann Arbor area.
+				li
+					a(href="http://www.mirobotclub.com/") Michigan Robot Club
+					p An informal group of robotics enthusiasts.
+				li
+					a(href="http://makerbridge.si.umich.edu/") Makerbridge
+					p Online community for everyone interested in makerspaces and maker culture.
+				li
+					a(href="http://electroniclunch.wordpress.com/") Electronic Lunch
+					p An interdisciplinary lunch-build-think-tank.
+
+				li
+					img.pic(src="/images/groups/festifools.jpg")
+					a(href="https://wonderfoolproductions.org/") Festifools
+					p What would happen if a whole bunch of people made 20 foot tall puppets and paraded them down Main St one weekend a year? This is Festifools.
+
+			h2#technology-groups Technology Groups
+			ul
+				li
+					a(href="http://a2geeks.org/") a2geeks
+					p Nonprofit organization dedicated to making Ann Arbor a great place for creative and innovative people to live and work by opening the tech culture to everyone.
+					p A2Geeks is a nonprofit dedicated to making southeast Michigan and Ann Arbor in particular, a great place for geeks and creatives to live, work, and play. We support individuals and groups seeking to build community around issues or projects they are passionate about and to educate others in the area.
+				li
+					img.pic(src="/images/groups/arbsec.jpg")
+					a(href="http://arbsec.org/") Ann Arbor Security Meetup (ArbSec)
+					p An informal meetup of information security professionals in Ann Arbor.
+					p For a city its size, Ann Arbor has a surprisingly active security community. ArbSec is an informal gathering of computer security enthusiast at local watering holes.
+				li
+					a(href="http://www.the-collective.net/2600/") mi2600
+					p Michigan group for 2600: The Hacker Quarterly.
+				li
+					img.pic(src="/images/groups/a2newtech.jpeg")
+					a(href="http://www.meetup.com/a2newtech/") A2 New Tech
+					p Ann Arbor New Tech seeks to foster tech entrepreneurship by facilitating communication, providing access to resources, and creating community.
+					p Five presenters this month take the stage for ten minutes each, five minutes to demo and five minutes to answer questions, followed by open announcements and community networking. E-mail organizers at a2newtech.org if you'd like to present!
+				li
+					a(href="http://www.meetup.com/a2civictech/") Ann Arbor Civic Tech
+					p Group to discuss how technology can be used to engage in civic activities.
+				li
+					a(href="http://www.meetup.com/AnnArborComputerSociety/") Ann Arbor Computer Society
+					p Group for presentations and discussions covering a wide range of technology-related topics
+				li
+					a(href="https://groups.yahoo.com/neo/groups/a2b3/info") Ann Arbor Bi Bim Bop
+					p "A2B3" is a networking/discussion/think-tank lunch group with an emphasis on technology.
+				li
+					a(href="http://la2m.org/") LA2M
+					p Lunch group that meets to discuss the latest digital and new marketing trends, strategies, and techniques.
+				li
+					a(href="http://www.meetup.com/MoMoa2/") Mobile Monday Ann Arbor
+					p A chapter of Mobile Monday Michigan which focuses on encouraging innovation within the local mobile sector and helping local companies participate in initiatives through the import and export of visions, concepts, technologies, know-how and best practices.
+				li
+					a(href="http://www.w8pgw.org/") Arrow Communication Association
+					p The oldest amateur radio (“ham”) club in Washtenaw and is dedicated to the promotion of amateur radio activities.
+				li
+					a(href="http://www.meetup.com/Fanzoo-Learn-Something/") Learn Something
+					p Monthly event group focused on development, hobbies, etc hosted by Fanzoo Technology.
+				li
+					a(href="https://www.facebook.com/groups/hackersandhustlers/") Hackers &amp; Hustlers
+					p Community for conversations about entrepreneurship and Michigan's developing ecosystem.
+				li
+					a(href="http://www.meetup.com/a2-game-designers/") A2GD
+					p Group which aims to bring local game designers together to share ideas, experiences, and design new games.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-Detroit-Startup-Meetup/") Ann Arbor/Detroit Startup Meetup
+					p Created to showcase and bring together local start-ups, entrepreneurs, and business owners, or anyone else who wants to learn more about the startup world.
+				li
+					a(href="http://www.meetup.com/Quantified-Self-Ann-Arbor/") Quantified Self Ann Arbor
+					p An eclectic exploration of self-tracking - geotracking, life-logging, DNA sequencing, etc. - to gain more knowledge about yourself.
+				li
+					a(href="http://www.meetup.com/Machine-Learning-Data-Science-and-Industry/") Machine Learning: Data, Science, and Industry
+					p Created with the goal to strengthen the communication between researchers, engineers, and business professionals who want to explore the opportunities created by machine learning.
+				li
+					a(href="http://www.meetup.com/A2-Cust-Support-Success/") Ann Arbor Customer Support &amp; Success Meetup
+					p Meetup for customer-facing teams to discuss strategy, best practices, and pitfalls to avoid when interfacing with your customers.
+				li
+					a(href="https://sites.google.com/site/a2vigr/") Ann Arbor Video Interest Group
+					p Interest group for video producers/tech/etc.
+				li
+					a(href="http://www.meetup.com/connectedcar/") Connected Car Meetup
+					p A face-to-face community of connected-car doers and thinkers.
+				li
+					a(href="http://www.meetup.com/Agile-Groupies/") Agile Groupies
+					p Local user group serving anyone interested in Agile techniques and methods.
+				li
+					a(href="http://www.meetup.com/A2-Cust-Experience/") Ann Arbor Customer Experience Meetup
+					p Network with customer-facing teams and discuss strategy, best practices, and pitfalls.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-Chapter-of-the-American-Statistical-Association/") Ann Arbor Chapter of the American Statistical Association
+					p Ann Arbor chapter of the ASA, with regular meetings open to anybody interested in statistics, data and analysis.
+				li
+					a(href="http://www.meetup.com/Apache-Apex-Ann-Arbor-Meetup/") Apache Apex Ann Arbor Meetup
+					p Meetup for Apache's unified platform for big data stream and batch processing.
+				li
+					a(href="http://www.meetup.com/A2-Experience-Design-with-Agile-Lean-UX/") A2 Experience Design with Agile &amp; Lean UX
+					p Lean UX/lean startup and agile development meetup.
+				li
+					a(href="http://www.meetup.com/Balanced-Team-Ann-Arbor/") Balance Team Ann Arbor
+					p Global movement of people who value multi-disciplinary collaboration and iterative delivery focused on customer value as a source for innovation.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-Detroit-NLPers-A2D-NLP/") Ann Arbor/Detroit NLPers
+					p Group for all Natural Language Processing (NLP) and Machine Learning (ML) researchers, students, practitioners and enthusiasts in the Ann Arbor and Detroit Areas.
+				li
+					a(href="http://www.meetup.com/AWS-Michigan/") AWS Michigan
+					p User's group with monthly meetings exploring topics related to Amazon EC2, S3, and other aspects of the cloud-computing platform.
+				li
+					a(href="http://www.meetup.com/Michigan-Ethereum-Meetup/") Michigan Ethereum Meetup
+					p Meeting place for software developers, philosophers, entrepreneurs, and anyone else interested in smart contracts and blockchain tech.
+				li
+					a(href="http://www.meetup.com/Predictive-Analytics-S-E-Michigan/") Predictive Analytics - S.E. Michigan
+					p User group for predictive analytics, data mining, business analytics or analytics of any kind.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-Web-Analytics-Wednesday/") Ann Arbor Web Analytics Wednesday
+					p User group for web analytics, digital analysis, and optimization practitioners and folks wishing to work in the field.
+				li
+					a(href="http://www.meetup.com/Ann-Arbor-FinTech-Meetup/") Ann Arbor Fintech Meetup
+					p Group for anyone interested in learning and sharing about all things at the intersection of finance and technology.
+				li
+					a(href="http://www.meetup.com/a2entrepreneurs/") Ann Arbor Entrepreneurs
+					p Group for networking with Ann Arbor entrepreneurs.
+				li
+					img.pic(src="/images/groups/designgroup.jpg")
+					a(href="http://www.meetup.com/a2entrepreneurs/") Ann Arbor Design Group
+					p Ann Arbor Design Group is a collection of interdisciplinary designers (UI/UX, graphic, product, architecture, etc). We host speakers, show-and-tells, design jams, and other events to help designers and design students in Ann Arbor connect, learn, find work, and hire designers.
+
+			h2#un-conferences Un/conferences
+			ul
+				li
+					img.pic(src="/images/groups/ignite_ann_arbor.jpg")
+					a(href="http://www.igniteannarbor.com/") Ignite Ann Arbor
+					p Ann Arbor's Ignite-style (5 minutes, 20 slides) presentation series.
+					p Speakers get 5 minutes to share their nerdy passion. The audience gets their brains filled with amazing stories. What more could you ask for?
+				li
+					img.pic(src="/images/groups/NerdNite2.jpg")
+					a(href="https://www.facebook.com/NerdNiteAnnArbor") Nerd Nite Ann Arbor
+					p Monthly event held in more than 60 cities across the globe during which several folks give 18-21-minute fun-yet-informative presentations across all disciplines – while the audience drinks along.
+					p Nerd Nite is a monthly event held in more than 50 cities across the globe during which several folks give 18-21-minute fun-yet-informative presentations across all disciplines – while the audience drinks along.
+				li
+					a(href="http://art-design.umich.edu/stamps") Penny W. Stamps Speaker Series
+					p The Speaker Series brings respected emerging and established artists/designers from a broad spectrum of media to conduct a public lecture and engage with the Ann Arbor community.
+				li
+					a(href="http://northquad.umich.edu/exposureseries/") The Exposure Series
+					p The Exposure Series is an ongoing interdisciplinary presenter series based off the PechaKucha Night framework.
+				li
+					a(href="http://tedxuofm.com/") TEDxUofM
+					p The University of Michigan's TEDx series. (Attendance to the main event is not free.)
+				li
+					a(href="http://worldiaday.org/") World Information Architecture Day
+					p Events centered around those who specialize in the design and construction of shared information environments.
+				li
+					a(href="https://sites.google.com/a/umich.edu/quasicon/") Quasicon
+					p Quasicon is an annual, one-day conference devoted to discussing libraries (requires a fee). Librarians, information professionals with an interest in libraries, and graduate students gather from around southeast Michigan to exchange ideas about what libraries are, how they have changed, and how they will continue to evolve.
+				li
+					a(href="http://www.meetup.com/Duo-Tech-Talks/") Duo Tech Talks
+					p Tech-centric talks covering a wide range of topics, hosted by Duo Security.
+				li
+					a(href="https://www.lsa.umich.edu/cscs/events/seminarseries") U-M LSA Complex Systems Seminar Series
+					p Seminar series from the University of Michigan focusing on the presentation of research of complex systems.
+				li
+					a(href="https://www.si.umich.edu/newsandevents/events?field_audience_value=1") U-M School of Information Public Events
+					p The University of Michigan School of Information's public events include the Yahoo! Seminar Series, often focused on technology and philosophy, and the UMSI Makerfest.
+				li
+					a(href="http://www.igniteuxmi.com/") Ignite UX Michigan
+					p An evening of 5 minute talks on a range of user experience related topics.
+				li
+					a(href="http://micities.info/") #micities
+					p Focuses on the interactions between government services, communities, information, and technology. (Requires a fee.)
+				li
+					a(href="http://fordschool.umich.edu/events/upcoming") Gerald R. Ford School of Public Policy Science, Technology, and Public Policy Program Events
+					p The University of Michigan's Gerald R. Ford School of Public Policy's science and technology events, includes public events. (You'll need to filter their calendar for the approrpiate topics and public access.)
+				li
+					a(href="https://www.eecs.umich.edu/eecs/etc/events/events.html") U-M Department of Electrical Engineering and Computer Science Events
+					p Includes many public computer science related lectures, including a Distinguished Lecture Series.
+				li
+					a(href="http://isd.engin.umich.edu/events-calendar.htm") U-M College of Engineering Integrative Systems and Design events
+					p Public, though not free, events concerning leadership, manufacturing, product development, etc.
+				li
+					a(href="http://www.bus.umich.edu/Conferences/") U-M Ross School of Business Conferences
+					p Public conferences from the University of Michigan's Ross School of Business.
+				li
+					a(href="http://www.lib.umich.edu/events") U-M Library Events
+					p Public events from the U-M Library.
+				li
+					a(href="http://merit.edu/learning/") Merit Professional Learning
+					p Events for professional learning, usually computer-centric (web development, IT, etc). (Requires fees.)
+				li
+					a(href="http://safecomputing.umich.edu/events/") U-M ITS IT Events
+					p Public events from the University of Michigan's Information and Technology Services department, including the SUMIT security symposium and the Dissonance speaker series.
+				li
+					a(href="http://annarbor.wordcamp.org/") Wordcamp Ann Arbor
+					p Ann Arbor's own WordCamp, a casual conference with topics related to Wordpress.
+				li
+					a(href="http://www.entreslam.com/") Entre-SLAM!
+					p A business storytelling competition presenting stories of impact from entrepreneurs and the organizations that support them.
+				li
+					a(href="http://personaldigitalarchiving.com/") Personal Digital Archiving Conference
+					p A showcase of both current and emerging scholarship on personal information management and personal digital archiving, as well as exciting and innovative projects and programs.
+				li
+					a(href="http://positiveorgs.bus.umich.edu/positive-links-speaker-series/") Positive Links Speaker Series
+					p Public speaker series featuring practical research-based strategies for building organizations that are high performing and bring out the best in people.
+				li
+					a(href="http://www.annarborusa.org/tech-trek") A2 Tech Trek
+					p Tour of Ann Arbor startups and emerging technology companies; including product demonstrations, showcase of innovation, food, and prizes.
+				li
+					a(href="http://www.intermitten.org/") Intermitten
+					p Conference exploring the intersection between creativity and innovation.
+
+			h2#hackathons Hackathons
+			ul
+				li
+					a(href="http://a2datadive.org/") A2DataDive
+					p A2 DataDive is a 48-hour event held in service of several nonprofits who seek to explore their datasets and discover creative answers to their research questions.
+				li
+					a(href="http://www.up.co/communities/usa/annarbor/startup-weekend/") Startup Weekend
+					p Hackathon where anyone is welcome to pitch their startup idea and receive feedback from their peers. Teams organically form around the top ideas (as determined by popular vote) and then it’s a 54 hour frenzy of business model creation, coding, designing, and market validation. The weekends culminate with presentations in front of local entrepreneurial leaders with another opportunity for critical feedback.
+				li
+					a(href="http://www.annarborgivecamp.org/") Ann Arbor GiveCamp
+					p A weekend-long event where local technology experts, business professionals, and charity personnel come together to ease the burden of area non-profits through technology.
+				li
+					a(href="http://www.michigan.gov/codemichigan/") Code Michigan
+					p Three days with an army of civic-minded developers and designers creating amazing apps for Michigan.
+				li
+					a(href="http://a2healthhacks.org/") A2 Health Hacks
+					p Healthcare hackathon focused on disease prevention in developing countries as well as underserved areas of developed countries.
+
+				li
+					a(href="http://mhacks.org/") MHacks
+					p One of the largest hackathons in the country, hosted at the University of Michigan
+
+			h2#infrastructure Infrastructure
+			ul
+				li
+					a(href="http://www.techbrewery.org/") Tech Brewery
+					p Facilities for rent to tech companies, startups, etc.
+				li
+					a(href="http://workantile.com/") Workantile
+					p Facilities for rent to support the work and social needs of independent workers in the Ann Arbor area.
+				li
+					a(href="http://www.annarborusa.org/") SPARK
+					p Ann Arbor incubator network.
+				li
+					a(href="http://arbornet.org/") Arbornet
+					p Non-profit organization which runs the world's longest running public access UNIX system, offering conferencing, real time chat, UNIX shell accounts, free email, web hosting, and more.
+				li
+					a(href="https://mirideshare.org/") Michigan Rideshare
+					p An online matching service for commuters working in southeast Michigan to find carpool, vanpool, and bike partners quickly and securely.
+				li
+					a(href="http://www.acceleratemichigan.org/") Accelerate Michigan
+					p International business competition designed to bring together later stage entrepreneurial companies with local, national and international investors.
+				li
+					a(href="http://grex.org/") Grex
+					p Public access Unix and computer conferencing system, featuring ongoing bulletin board discussion areas (called conferences), multi-user chat channels, Internet email, and more.
+				li
+					a(href="http://www.awesomefoundation.org/en/chapters/ann-arbor") The Awesome Foundation - Ann Arbor Chapter
+					p Each fully autonomous chapter supports "awesome" projects through micro-grants, usually given out monthly. These micro-grants, $1000 or the local equivalent, come out of pockets of the chapter's trustees and are given on a no-strings-attached basis to people and groups working on awesome projects.
+				li
+					a(href="http://www.umsocialventure.com/") University of Michigan Social Venture Fund
+					p Invests in and supports innovative companies that place social and environmental impact at the heart of their business model.
+				li
+					a(href="http://zlcfund.com/") Zell Lurie Commercialization Fund
+					p Pre-Seed Venture Fund of Ross School of Business at the University of Michigan.
+				li
+					a(href="http://www.miangelfund.com/") Michigan Angel Fund
+					p Focuses on providing funding to capital efficient early stage companies located in Michigan.
+				li
+					a(href="http://www.annarborangels.org/") Ann Arbor Angels
+					p Membership organization of Angel investors that invest in early-stage innovation based companies, with a primary focus in Southeast Michigan.
+				li
+					a(href="http://www.zli.bus.umich.edu/vc_pe/frankel_fund.asp") Frankel Commercialization Fund
+					p Pre-seed investment fund established to identify and accelerate the commercialization of ideas generated within the surrounding community.
+				li
+					a(href="http://plymouthvc.com/") Plymouth Ventures
+					p Venture fund which invests in growth-stage companies in the Great Lakes region.
+				li
+					a(href="http://desaiaccelerator.umich.edu/") Desai Accelerator
+					p Startup accelerator (open to the public) from the University of Michigan.
+				li
+					a(href="http://brickyardannarbor.com/") The Brickyard
+					p Co-working space in Ann Arbor with desks for rent.
+
+			h2#job-hunting Job Hunting
+			ul
+				li
+					a(href="http://www.mitalent.org/") Pure Michigan Talent Connect
+					p Job board for the state of Michigan.
+				li
+					a(href="http://www.annarborusa.org/work-here/job-seeker-resources/job-portal") SPARK Job Portal
+					p Ann Arbor's startup incubator job portal.
+				li
+					a(href="http://www.amycelltalent.com/") Amy Cell
+					p Talent consultants and recruiters/matchmakers focused on supporting Michigan technology companies with their talent needs.
+				li
+					a(href="https://angel.co/michigan") AngleList - Ann Arbor Startups
+					p A listing of Ann Arbor startups, including job openings.
+				li
+					a(href="https://www.facebook.com/groups/181905888871994/") Hackers and Hustlers Freelance and Jobs
+					p A collection of mid-west developers, designers, marketers & startups looking for contracts, jobs or hiring.
+				li
+					a(href="https://www.truejob.com/") TrueJob
+					p Job search site with algorithmic matching, the "Pandora for jobs".
+
+			h2#kids-hack-ann-arbor Kids Hack Ann Arbor
+			ul
+				li
+					a(href="https://sites.google.com/a/aaps.k12.mi.us/tedxyouth-annarbor/") TEDxYouth@AnnArbor
+					p TED event for high school students hosted by Ann Arbor Skyline High School.
+				li
+					a(href="http://brainmonkeys.com/") Brain Monkeys
+					p Robotics and technology programs for kids, with an emphasis on understanding and education.
+				li
+					a(href="http://rocksandrobots.com/") Rocks and Robots
+					p Engineering/robotics and outdoors/rock-climbing summer camp.
+				li
+					a(href="https://www.facebook.com/gamestartschool") Game Start School
+					p Program to teach 3rd - 8th graders programming, digital art and game design.
+				li
+					a(href=" https://www.idtech.com/locations/michigan-summer-camps/ann-arbor/id-tech-university-of-michigan/") iD Tech Camps - University of Michigan
+					p Kid's co-ed summer technology programs offered at the University of Michigan.
+				li
+					a(href="https://www.digitalmediaacademy.org/michigan-tech-camps/university-of-michigan/") Digital Media Academy - University of Michigan
+					p Summer programs for kids who want a pre-collegiate experience at a college they’re interested in attending or who just want to get away for the summer and explore a new city.
+				li
+					a(href="http://www.engin.umich.edu/mconnex/info/alumni/xplore-engineering") Xplore Engineering
+					p Hands-on experience in a variety of engineering disciplines for 4th through 7th graders. While the program itself is targeted to the children of University of Michigan alumni, enrollment is open to the public.
+
+			br
+			br
+			br
+			p
+				| Are we missing something? Add your group  
+				a(href="https://github.com/sampl/madeina2", target="_blank") here
+				| !

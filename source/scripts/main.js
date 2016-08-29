@@ -1,1 +1,1 @@
-//console.log('hello from main.js')
+$('.sticky').Stickyfill();
