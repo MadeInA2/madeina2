@@ -228,6 +228,14 @@ p {
 }
 
 
+/* calendar */
+
+#calendar {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+
 /* footer */
 .footer {
 	padding: 5em 0;

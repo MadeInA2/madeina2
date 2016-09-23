@@ -5,6 +5,12 @@ html(lang="en-US" dir="ltr")
 		meta(charset="UTF-8")
 		meta(http-equiv="x-ua-compatible", content="ie=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
+
+		// vendor CSS
+		link(href="/vendor/fullcalendar.min.css" rel='stylesheet')
+		link(href="/vendor/fullcalendar.print.css" rel='stylesheet' media='print')
+
+		// site styles
 		link(rel="stylesheet", type="text/css", href="/main.css")
 		link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300")
 
@@ -27,9 +33,19 @@ html(lang="en-US" dir="ltr")
 				| -  
 				a(href="https://github.com/sampl/madeina2", target="_blank") source
 
+		// vendor js
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
-		script(src='/stickyfill.min.js')
+		script(src="/vendor/stickyfill.min.js")
+
+		// fullcalendar stuff
+		script(src='/vendor/moment.min.js')
+		//script(src="/vendor/gcal.js")
+		script(src="/vendor/fullcalendar.min.js")
+
+		// main js
 		script(src='/main.js')
+
+		// analytics
 		script.
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

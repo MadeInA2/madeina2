@@ -1,0 +1,16 @@
+extends ../../layouts/main
+
+block title
+	title Made in A2 - Events
+
+block header
+	.top-bar
+		include ../../includes/tabs
+		h1 Made in A2
+		a.go-home(href="/")
+			img.logo(src="/images/a2-whiteboard.png", alt="Made in A2")
+
+block content
+
+	.calendar-wrapper
+		#calendar
