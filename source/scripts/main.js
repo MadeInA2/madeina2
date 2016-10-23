@@ -13,21 +13,19 @@ $(document).ready(function() {
 			let item = data.results[i];
 			const event = {
 				title: item['name'],
-				start: new Date(item['time']),
+				start: new moment(item['time']),
 				url: item['event_url'],
 			}
 			events.push(event);
 		}
 
 		$('#calendar').fullCalendar({
-			defaultDate: '2016-10-22',
+			defaultDate: moment().format('YYYY-MM-DD'),
 			editable: true,
 			eventLimit: true,
 			events: events,
 			navLinks: true,
 			eventClick: function(calEvent, jsEvent, view) {
-				console.log('Event: ' + calEvent.title);
-				console.log('View: '+ view.name);
 				$(this).css('border-color', 'red');
 			}
 		});
