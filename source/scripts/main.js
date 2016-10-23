@@ -3,67 +3,33 @@ $(document).ready(function() {
 	// sticky sidebar on Community page
 	$('.sticky').Stickyfill();
 
-	// calendar on Events page
-	$('#calendar').fullCalendar({
-		defaultDate: '2016-09-12',
-		editable: true,
-		eventLimit: true, // allow "more" link when too many events
-		events: [
-			{
-				title: 'All Day Event',
-				start: '2016-09-01'
-			},
-			{
-				title: 'Long Event',
-				start: '2016-09-07',
-				end: '2016-09-10'
-			},
-			{
-				id: 999,
-				title: 'Repeating Event',
-				start: '2016-09-09T16:00:00'
-			},
-			{
-				id: 999,
-				title: 'Repeating Event',
-				start: '2016-09-16T16:00:00'
-			},
-			{
-				title: 'Conference',
-				start: '2016-09-11',
-				end: '2016-09-13'
-			},
-			{
-				title: 'Meeting',
-				start: '2016-09-12T10:30:00',
-				end: '2016-09-12T12:30:00'
-			},
-			{
-				title: 'Lunch',
-				start: '2016-09-12T12:00:00'
-			},
-			{
-				title: 'Meeting',
-				start: '2016-09-12T14:30:00'
-			},
-			{
-				title: 'Happy Hour',
-				start: '2016-09-12T17:30:00'
-			},
-			{
-				title: 'Dinner',
-				start: '2016-09-12T20:00:00'
-			},
-			{
-				title: 'Birthday Party',
-				start: '2016-09-13T07:00:00'
-			},
-			{
-				title: 'Click for Google',
-				url: 'http://google.com/',
-				start: '2016-09-28'
+	const base_events_url = "https://api.meetup.com/2/open_events";
+	const params = 'callback=?&sign=true&zip=48103';
+	const api_key = '1';
+	const feed_url = base_events_url + '?' + params + '&' + api_key;
+	events = [];
+	$.getJSON(feed_url, function (data) {
+		for(var i=0; i<data.results.length; i++) {
+			let item = data.results[i];
+			const event = {
+				title: item['name'],
+				start: new Date(item['time']),
+				url: item['event_url'],
 			}
-		]
-	});
+			events.push(event);
+		}
 
+		$('#calendar').fullCalendar({
+			defaultDate: '2016-10-22',
+			editable: true,
+			eventLimit: true,
+			events: events,
+			navLinks: true,
+			eventClick: function(calEvent, jsEvent, view) {
+				console.log('Event: ' + calEvent.title);
+				console.log('View: '+ view.name);
+				$(this).css('border-color', 'red');
+			}
+		});
+	});
 });
