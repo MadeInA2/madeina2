@@ -235,6 +235,14 @@ p {
 	margin: 0 auto;
 }
 
+.fc-time {
+	color: white;
+}
+
+.fc-title {
+	color: white;
+}
+
 
 /* footer */
 .footer {
