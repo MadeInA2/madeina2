@@ -43,7 +43,10 @@ $(document).ready(function() {
 			events: events,
 			navLinks: true,
 			eventClick: function(calEvent, jsEvent, view) {
-				$(this).css('border-color', 'red');
+				if(event.url) {
+					window.open(event.url);
+					return false;
+				}
 			}
 		});
 	});
