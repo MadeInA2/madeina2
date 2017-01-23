@@ -7,6 +7,11 @@ module.exports = (grunt) ->
 
 		# copy some files from /source to /build exactly how they are
 		copy:
+			cname:
+				expand: true
+				cwd: 'source/'
+				src: ['CNAME']
+				dest: 'build/'
 			images:
 				expand: true
 				cwd: 'source/images/'
