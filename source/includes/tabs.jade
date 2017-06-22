@@ -2,6 +2,7 @@
 	a(href="/")#companies-tab.tab Companies
 	a(href="/community")#community-tab.tab Community
 	a(href="/jobs")#jobs-tab.tab Jobs
+	a(href="/calendar")#calendar-tab.tab Calendar
 
 script.
 
@@ -14,5 +15,7 @@ script.
 			break;
 		case 'jobs':
 			document.getElementById("jobs-tab").className = "tab active";
+		case 'calendar':
+			document.getElementById("calendar-tab").className = "tab active";
 			break;
 	}

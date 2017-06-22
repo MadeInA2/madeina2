@@ -240,6 +240,33 @@ hr {
   padding: 2rem;
 }
 
+/* calendar */
+
+#calendar {
+	max-width: 1200px;
+	margin: 2rem auto;
+}
+
+.fc-day-number {
+	font-family: roboto;
+	font-weight: 500;
+	font-size: 13px;
+	padding: .5em !important;
+}
+
+.fc-event {
+	background: hsl(200, 80%, 60%);
+	border: none;
+	padding: 3px;
+	margin-bottom: 2px;
+}
+.fc-event .fc-time,
+.fc-event .fc-title {
+	color: white;
+	font-family: roboto;
+}
+
+
 /* footer */
 .footer {
 	padding: 5em 0;
