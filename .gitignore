@@ -2,3 +2,4 @@ aws.json
 node_modules/
 build/*
 .grunt/
+.idea/
