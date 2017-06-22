@@ -32,6 +32,12 @@ p {
 	font-family: 'Roboto';
 	margin: 0 0 1rem;
 }
+hr {
+  height: 1px;
+  border: none;
+  background: #eee;
+  margin: 1em 0;
+}
 
 /* big homepage hero */
 .hero {
@@ -227,6 +233,12 @@ p {
 	display: table;
 }
 
+/* jobs */
+.jobs-wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+}
 
 /* footer */
 .footer {
