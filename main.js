@@ -52,6 +52,7 @@ var meetups = [
 	'Predictive-Analytics-S-E-Michigan',
 	'Quantified-Self-Ann-Arbor',
 	'SEM-JS',
+	'Criteo-Labs-Tech-Talks-Ann-Arbor'
 ]
 
 // ================================================================
