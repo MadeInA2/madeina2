@@ -15,13 +15,12 @@ If your company meets the above requirements and you'd like to be added to the l
 
 Getting started:
  - [Download and install Node.js](http://nodejs.org/) if you haven't already
- - Install Grunt command line tools with `npm install -g grunt-cli`
  - Clone this repo with `git clone https://github.com/sampl/madeina2.git` and `cd madeina2`
  - Run `npm install`. *Note: if `npm install` fails, try `sudo npm install` or do [this](http://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo).*
 
-Run `grunt` to build the site and start a webserver at [localhost:8000](http://localhost:8000/). Install LiveReload to automatically refresh the page when you've made changes.
+Run `npm start` to build the site and start a webserver at [localhost:8000](http://localhost:8000/). Install LiveReload to automatically refresh the page when you've made changes.
 
-To deploy, first ensure that you're a collaborator on the github repo, then run `grunt deploy`.
+To deploy, first ensure that you're a collaborator on the github repo, then run `npm run deploy`.
 
 
 ### Slack team invitations
