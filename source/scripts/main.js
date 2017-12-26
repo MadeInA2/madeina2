@@ -66,7 +66,9 @@ var meetups = [
 	'Write-the-Docs-A2',
 	'a2a11y',
 	'Crypto-Community',
-	'Scaled-Agile-Framework-SAFe-Southeast-Michigan'
+	'Scaled-Agile-Framework-SAFe-Southeast-Michigan',
+	'Build-Smarter-Continuous-Integration-Delivery-Quality',
+	'Ann-Arbor-District-Library-Secret-Lab'
 ]
 
 // ================================================================
