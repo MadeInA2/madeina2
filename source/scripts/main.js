@@ -64,7 +64,8 @@ var meetups = [
 	'Power-User-Show-Tell',
 	'orchestructure',
 	'Write-the-Docs-A2',
-	'a2a11y'
+	'a2a11y',
+	'Crypto-Community'
 ]
 
 // ================================================================
