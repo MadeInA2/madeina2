@@ -52,7 +52,19 @@ var meetups = [
 	'Predictive-Analytics-S-E-Michigan',
 	'Quantified-Self-Ann-Arbor',
 	'SEM-JS',
-	'Criteo-Labs-Tech-Talks-Ann-Arbor'
+	'Criteo-Labs-Tech-Talks-Ann-Arbor',
+	'Ann-Arbor-Coffee-House-Coders',
+	'Ann-Arbor-Software-Co-Workers',
+	'PyData-Ann-Arbor',
+	'AnnArborFP',
+	'a2mobilitytech',
+	'eCommerce-Ann-Arbor',
+	'Product-Hunt-Ann-Arbor',
+	'Nightlife-Arcade',
+	'Power-User-Show-Tell',
+	'orchestructure',
+	'Write-the-Docs-A2',
+	'a2a11y'
 ]
 
 // ================================================================
