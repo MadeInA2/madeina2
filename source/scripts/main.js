@@ -65,7 +65,8 @@ var meetups = [
 	'orchestructure',
 	'Write-the-Docs-A2',
 	'a2a11y',
-	'Crypto-Community'
+	'Crypto-Community',
+	'Scaled-Agile-Framework-SAFe-Southeast-Michigan'
 ]
 
 // ================================================================
