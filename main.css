@@ -217,6 +217,7 @@ hr {
 }
 .community-content ul li .pic {
 	max-width: 100%;
+	display:block;
 }
 
 /* make any sidebar sticky */
