@@ -11,6 +11,10 @@ body {
 	padding: 0;
 	line-height: 1.5;
 }
+.wrapper {
+	margin: 1rem 2rem;
+	overflow: auto;
+}
 
 /* basic elements */
 h1 {
@@ -130,37 +134,40 @@ hr {
 }
 
 /* companies */
-.wrapper {
-	margin: 1rem 2rem;
-	overflow: auto;
+.companies {
+	display: grid;
+	grid-row-gap: 1rem;
+	grid-column-gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
 }
 .company {
 	color: #444;
 	opacity: .95;
-	border: 6px solid white;
 	display: block;
 	float: left;
 	width: 100%;
 	color: white;
 	text-align: center;
+	transition: opacity .2s ease;
+	border-radius: 3px;
+	padding: 5rem 1rem;
+	text-decoration: none;
+	font-size: 18px;
 }
 .company:hover {
 	opacity: 1;
 }
-.company a {
-	display: block;
-	padding: 5rem 1rem;
+.company h2 {
 	line-height: 3rem;
 	font-size: 36px;
-	text-decoration: none;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	color: white;
+	margin: 0;
 }
-.company.add-your-own a {
-	font-size: 18px;
-	color: #444;
+.company h2.contrast {
+	color: black;
 }
 
 /* community */
@@ -303,22 +310,5 @@ hr {
 
 	.tabs {
 		text-align: center;
-	}
-}
-
-@media (min-width: 700px) {
-	.company {
-		width: 50%;
-	}
-
-}
-@media (min-width: 1000px) {
-	.company {
-		width: 33.33%;
-	}
-}
-@media (min-width: 1400px) {
-	.company {
-		width: 25%;
 	}
 }
