@@ -39,8 +39,6 @@ var meetups = [
 	'connectedcar',
 	'Craftsman-Guild',
 	'Duo-Tech-Talks',
-	'Ember-A2D',
-	'Fanzoo-Learn-Something',
 	'Free-Code-Camp-Ann-Arbor',
 	'gdg-a3',
 	'Girl-Develop-It-Ann-Arbor',
@@ -68,7 +66,17 @@ var meetups = [
 	'Crypto-Community',
 	'Scaled-Agile-Framework-SAFe-Southeast-Michigan',
 	'Build-Smarter-Continuous-Integration-Delivery-Quality',
-	'Ann-Arbor-District-Library-Secret-Lab'
+	'Ann-Arbor-District-Library-Secret-Lab',
+	'Michigan-Python',
+	'Angular-Ann-Arbor',
+	'Michigan-Vue',
+	'Locally-Sourced-Game-Demo-Night',
+	'a3vgroup',
+	'Bloom-In-Tech',
+	'Tech-Inclusive',
+	'tmc-michigan',
+	'TusStar-New-Tech-Meetup',
+	'Ann-Arbor-Azure-Meetup'
 ]
 
 // ================================================================
