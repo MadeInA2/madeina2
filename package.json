@@ -2,7 +2,7 @@
   "name": "made-in-a2",
   "version": "0.1.0",
   "scripts": {
-    "start": "ws --directory ./source --spa index.html"
+    "start": "ws --directory ./docs --spa index.html"
   },
   "dependencies": {
     "local-web-server": "^4.2.1"
