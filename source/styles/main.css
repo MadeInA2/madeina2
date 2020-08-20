@@ -45,30 +45,12 @@ hr {
 
 /* big homepage hero */
 .hero {
-	overflow: auto;
-	background-color: #00307F;
-	background: url('images/bg.jpg') no-repeat center center;
-	background-size: cover;
-	color: white;
 	text-align: center;
-}
-.hero h1 {
-	font-size: 35px;
-	text-indent: -9999px;
-	padding: 0;
-	margin: 0;
-	height: 1px;
+	margin: 6rem 0;
 }
 .hero .subheading {
-	color: #fff;
 	font-weight: 400;
 	margin: 0 0 1rem;
-}
-
-.hero .logo {
-	max-width: 250px;
-	width: 100%;
-	margin: 3rem 0 0;
 }
 .hero .social-media-icons {
 	margin: 0 0 8rem;
@@ -79,13 +61,13 @@ hr {
 	margin: .5rem;
 }
 .hero .social-media-icons svg path {
-	fill: white;
+	fill: #00307F;
 }
 
 /* top bar */
 .top-bar {
 	background-color: #00307F;
-	background: url('images/bg.jpg') no-repeat top center;
+	background: url('/images/bg.jpg') no-repeat top center;
 	background-size: cover;
 	color: white;
 	height: 110px;

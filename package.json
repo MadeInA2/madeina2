@@ -1,19 +1,10 @@
 {
   "name": "made-in-a2",
   "version": "0.1.0",
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-connect": "~0.6.0",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-jade": "~0.9.1",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-gh-pages": "^1.1.0",
-    "grunt-s3": "~0.2.0-alpha.3"
-  },
   "scripts": {
-    "start": "grunt",
-    "deploy": "grunt deploy"
+    "start": "ws --directory ./source --spa index.html"
+  },
+  "dependencies": {
+    "local-web-server": "^4.2.1"
   }
 }
