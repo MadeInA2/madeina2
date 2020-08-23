@@ -1,0 +1,27 @@
+# This is a basic workflow for deploying the site
+
+name: github pages
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+    # Sets up the proper node version
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
+
+    - run: npm install
+    - run: npm run build
+
+    - uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
