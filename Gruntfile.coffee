@@ -69,6 +69,10 @@ module.exports = (grunt) ->
 	# run this task with "grunt"
 	grunt.registerTask('default', ['clean', 'copy', 'jade', 'connect', 'watch'])
 
+	# compiles the site
+	# run this task with "grunt build"
+	grunt.registerTask('build', ['clean', 'copy', 'jade'])
+
 	# compiles the site and sends it to Amazon S3 (see readme for directions)
 	# run this task with "grunt deploy"
-	grunt.registerTask('deploy', ['clean', 'copy', 'jade', 'gh-pages'])
+	grunt.registerTask('deploy', ['build', 'gh-pages'])
