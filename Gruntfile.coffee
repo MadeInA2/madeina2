@@ -58,7 +58,7 @@ module.exports = (grunt) ->
 				base: 'build'
 			src: ['**']
 
-  grunt.loadNpmTasks('grunt-contrib-clean')
+	grunt.loadNpmTasks('grunt-contrib-clean')
 	grunt.loadNpmTasks('grunt-contrib-copy')
 	grunt.loadNpmTasks('grunt-contrib-jade')
 	grunt.loadNpmTasks('grunt-contrib-connect')
