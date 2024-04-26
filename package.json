@@ -16,5 +16,8 @@
     "start": "grunt",
     "build": "grunt build",
     "deploy": "grunt deploy"
+  },
+  "dependencies": {
+    "coffeescript": "^2.7.0"
   }
 }
